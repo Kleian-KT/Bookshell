@@ -72,7 +72,7 @@ public class RegistrationActivity extends AppCompatActivity {
                                 if (dbTask.isSuccessful()) {
                                     user.sendEmailVerification();
                                     Toast.makeText(RegistrationActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(RegistrationActivity.this, MainActivity.class));
+                                    startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
 
                                 } else {
                                     Toast.makeText(RegistrationActivity.this, "Failed to save user data", Toast.LENGTH_SHORT).show();

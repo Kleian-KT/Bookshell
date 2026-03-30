@@ -19,5 +19,6 @@ public class User {
         this.stats = new Stats(0,0);
 
         this.badges = new ArrayList<>();
+        this.badges.add("New User");
     }
 }

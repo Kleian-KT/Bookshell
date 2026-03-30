@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView rvBooks;
     private BookAdapter adapter;
     private List<Book> bookList;
+    BottomNavigationView bottomNav;
     private Context c;
 
     @Override
@@ -60,14 +61,14 @@ public class MainActivity extends AppCompatActivity {
         adapter = new BookAdapter(c, (ArrayList<Book>) bookList);
         rvBooks.setAdapter(adapter);
         callBooks("bestseller");
-        BottomNavigationView bottomNav = findViewById(R.id.bottomNavigationView);
+        bottomNav = findViewById(R.id.bottomNavigationView);
         bottomNav.setOnItemSelectedListener(item -> {
             int id = item.getItemId();
             if (id == R.id.nav_home) {
                 //startActivity(new Intent(c, HomeActivity.class));
                 return true;
-            } else if (id == R.id.nav_community) {
-                startActivity(new Intent(c, CommunityActivity.class));
+            } else if (id == R.id.nav_library) {
+                startActivity(new Intent(c, LibraryActivity.class));
                 return true;
             } else if (id == R.id.nav_profile) {
                 startActivity(new Intent(c, ProfileActivity.class));
