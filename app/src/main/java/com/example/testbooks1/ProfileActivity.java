@@ -51,10 +51,10 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivity(new Intent(c, MainActivity.class));
                 return true;
             } else if (id == R.id.nav_library) {
-                //startActivity(new Intent(c, LibraryActivity.class));
+                startActivity(new Intent(c, LibraryActivity.class));
                 return true;
             } else if (id == R.id.nav_profile) {
-                startActivity(new Intent(c, ProfileActivity.class));
+                //startActivity(new Intent(c, ProfileActivity.class));
                 return true;
             }
             return false;
