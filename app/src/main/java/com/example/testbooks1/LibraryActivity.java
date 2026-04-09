@@ -79,6 +79,7 @@ public class LibraryActivity extends AppCompatActivity {
 
         btnAll = findViewById(R.id.btn_all);
         btnCurrentlyReadingTab = findViewById(R.id.btn_currently_reading_tab);
+        rvWantToRead = findViewById(R.id.rvWantToRead);
 
         btnAll.setOnClickListener(v -> updateTabUI(true));
         btnCurrentlyReadingTab.setOnClickListener(v -> updateTabUI(false));
